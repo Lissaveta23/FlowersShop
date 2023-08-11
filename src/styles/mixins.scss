@@ -1,0 +1,26 @@
+@mixin img_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+  background: url("../../../public/img/background-flowers.jpg");
+  background-size: no-repeat;
+  background-position: center;
+  color: #383838;
+}
+
+@mixin flex($direction, $justify, $align, $gap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin flex_align($direction, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  gap: $gap;
+}

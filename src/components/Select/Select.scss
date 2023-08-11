@@ -1,0 +1,17 @@
+.select {
+  border-radius: 5px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+  border: 2px solid #7b888e;
+  transition: all ease 0.3s;
+  outline: none;
+
+  &:hover {
+    background-color: #dedede;
+  }
+
+  option {
+    background-color: var(--white);
+  }
+}

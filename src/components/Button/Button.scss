@@ -1,0 +1,52 @@
+button {
+  border-radius: 15px;
+  height: 40px;
+  box-shadow: -5px -6px 5px -5px var(--pink) inset;
+  font-size: 18px;
+  transition: all ease 0.5s;
+  width: 100%;
+  max-width: 300px;
+
+  &:focus {
+    box-shadow: -5px -6px 10px -5px var(--white) inset;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.primary {
+  color: var(--white);
+  background-color: var(--pink);
+
+  &:hover {
+    box-shadow: -5px -6px 10px -5px var(--white) inset;
+  }
+}
+
+.outlined {
+  color: var(--gray);
+  background-color: transparent;
+  border: 2px solid var(--pink);
+
+  &:hover {
+    box-shadow: -5px -6px 10px -5px var(--pink) inset;
+  }
+}
+
+.text {
+  background-color: transparent;
+  color: var(--gray);
+  box-shadow: none;
+
+  &:hover {
+    color: var(--pink);
+  }
+}

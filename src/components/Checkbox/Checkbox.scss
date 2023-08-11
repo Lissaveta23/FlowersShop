@@ -1,0 +1,12 @@
+.checkbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

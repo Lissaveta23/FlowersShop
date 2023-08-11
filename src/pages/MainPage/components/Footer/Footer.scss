@@ -1,0 +1,21 @@
+.footer {
+  height: 200px;
+  background-color: var(--pink);
+  color: var(--white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    a {
+      &:hover {
+        transition: all ease 0.3s;
+        color: var(--gray);
+      }
+    }
+  }
+}

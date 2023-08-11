@@ -1,0 +1,20 @@
+.header {
+  position: absolute;
+  top: 0;
+  padding: 30px 80px;
+  max-height: 40px;
+
+  &_nav {
+    display: flex;
+    gap: 40px;
+
+    a {
+      font-size: 24px;
+
+      &:hover {
+        transition: all ease 0.3s;
+        color: var(--pink);
+      }
+    }
+  }
+}

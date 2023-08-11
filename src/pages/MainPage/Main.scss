@@ -1,0 +1,68 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  &_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background: url("../../../public/img/background-flowers.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #383838;
+  }
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    user-select: none;
+    padding: 30px 80px 0 80px;
+
+    &__button {
+      max-width: 30%;
+    }
+
+    h1 {
+      color: var(--pink);
+      font-size: 64px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  &_container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 80px;
+  }
+}
+
+.bouquets {
+  text-align: center;
+  flex: 1 1 40%;
+
+  &__cards {
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+}

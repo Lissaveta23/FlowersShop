@@ -1,0 +1,44 @@
+@import "../../styles/mixins.scss";
+
+.cart {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+
+  &__nav {
+    @include img_nav;
+  }
+
+  &__container {
+    @include flex(row, center, start, 40px);
+    padding: 30px 80px;
+    text-align: center;
+    min-height: 100%;
+    min-height: calc(100vh - 200px);
+  }
+
+  &__img {
+    width: 400px;
+    height: 20%;
+    border-radius: 3px;
+  }
+
+  &__name {
+    font-size: 36px;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  &__info {
+    @include flex_align(row, center, 10px);
+  }
+
+  &__title {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
